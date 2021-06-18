@@ -21,7 +21,7 @@ PM_START_TEXT = """
 
 ഹായ് {}, എന്റെ പേര് {}! ഞാൻ [ഇദ്ദേഹം](tg://user?id={}) നോക്കി നടത്തുന്ന ഒരു അടിപൊളി അഡ്മിൻ ബോട്ടാണ്.
 
- എന്റെ കോഡ് നിങ്ങൾക്ക് [ഇവിടെ](പറ്റിച്ചേ😁) കാണുവാൻ സാധിക്കില്ല 😊🤭.എന്റെ പ്രത്യേകത എന്തെന്നാൽ എന്നെ <a href="https://t.me/Movievibezz">Movie Vibezz</a> ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ പറ്റു.
+ എന്റെ കോഡ് നിങ്ങൾക്ക് ഇവിടെ കാണുവാൻ സാധിക്കില്ല 😊🤭.എന്റെ പ്രത്യേകത എന്തെന്നാൽ എന്നെ <a href="https://t.me/Movievibezz">Movie Vibezz</a> ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ പറ്റു.
 
 
 """
@@ -143,9 +143,9 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://youtu.be/W6CLKrehy6w")],
-                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/KeralaBots"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/KochuUpdates")],
-                     [InlineKeyboardButton(text="🎬 Youtube Channel", url="https://www.youtube.com/stealthtechnogaming?sub_confirmation=1"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  
+                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/Movievibezz"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/Movievibing")],
+                     [InlineKeyboardButton(text="My Dev👨‍🎓", url="https://t.me/RidolicKid"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
