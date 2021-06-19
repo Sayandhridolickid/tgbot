@@ -146,7 +146,6 @@ def start(bot: Bot, update: Update, args: List[str]):
                     [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username))],  
                      [InlineKeyboardButton(text="🎬 Support Group", url="https://t.me/Movievibezz"), InlineKeyboardButton(text="⭕️Join our Channel⭕️", url="https://t.me/Movievibing")],
                      [InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
-                     [InlineKeyboardButton(text="👶 My Dev", url="https://t.me/Ridolickid)]
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
